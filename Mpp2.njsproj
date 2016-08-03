@@ -76,6 +76,7 @@
     <Content Include="src\css\LinearTemplate\style-desktop.css" />
     <Content Include="src\css\LinearTemplate\style-mobile.css" />
     <Content Include="src\css\LinearTemplate\style.css" />
+    <Content Include="src\css\Presentation\MppPresentationStyles.css" />
     <Content Include="src\html\LinearTemplate\index.html" />
     <Content Include="src\html\LinearTemplate\left-sidebar.html" />
     <Content Include="src\html\LinearTemplate\LICENSE.txt" />
@@ -114,6 +115,7 @@
     <Folder Include="src\css\LinearTemplate\" />
     <Folder Include="src\css\LinearTemplate\font\" />
     <Folder Include="src\css\LinearTemplate\images\" />
+    <Folder Include="src\css\Presentation\" />
     <Folder Include="src\html\" />
     <Folder Include="src\html\LinearTemplate\" />
     <Folder Include="src\html\presentations\" />
