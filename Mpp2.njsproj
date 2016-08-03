@@ -31,10 +31,33 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.js" />
+    <Compile Include="bower_components\impress-js\js\impress.js" />
+    <Compile Include="bower_components\impress-js\karma.conf.js" />
+    <Compile Include="bower_components\impress-js\test\bootstrap.js" />
+    <Compile Include="bower_components\impress-js\test\core_tests.js" />
+    <Compile Include="gulpfile.js" />
     <Compile Include="routes\index.js" />
     <Compile Include="routes\presentation.js" />
     <Compile Include="routes\users.js" />
     <Compile Include="bin\www" />
+    <Content Include="bower_components\impress-js\.bower.json" />
+    <Content Include="bower_components\impress-js\.github\CONTRIBUTING.md" />
+    <Content Include="bower_components\impress-js\.github\ISSUE_TEMPLATE.md" />
+    <Content Include="bower_components\impress-js\.github\PULL_REQUEST_TEMPLATE.md" />
+    <Content Include="bower_components\impress-js\.gitignore" />
+    <Content Include="bower_components\impress-js\.jshintrc" />
+    <Content Include="bower_components\impress-js\.npmignore" />
+    <Content Include="bower_components\impress-js\apple-touch-icon.png" />
+    <Content Include="bower_components\impress-js\bower.json" />
+    <Content Include="bower_components\impress-js\CHANGELOG.md" />
+    <Content Include="bower_components\impress-js\circle.yml" />
+    <Content Include="bower_components\impress-js\css\impress-demo.css" />
+    <Content Include="bower_components\impress-js\DOCUMENTATION.md" />
+    <Content Include="bower_components\impress-js\favicon.png" />
+    <Content Include="bower_components\impress-js\index.html" />
+    <Content Include="bower_components\impress-js\LICENSE" />
+    <Content Include="bower_components\impress-js\package.json" />
+    <Content Include="bower_components\impress-js\README.md" />
     <Content Include="MppPresentation.html" />
     <Content Include="package.json" />
     <Content Include="public\stylesheets\style.styl" />
@@ -46,6 +69,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\" />
+    <Folder Include="bower_components\" />
+    <Folder Include="bower_components\impress-js\" />
+    <Folder Include="bower_components\impress-js\.github\" />
+    <Folder Include="bower_components\impress-js\css\" />
+    <Folder Include="bower_components\impress-js\js\" />
+    <Folder Include="bower_components\impress-js\test\" />
     <Folder Include="public\" />
     <Folder Include="public\images\" />
     <Folder Include="public\javascripts\" />
@@ -58,6 +87,8 @@
     <Folder Include="typings\globals\debug\" />
     <Folder Include="typings\globals\express-serve-static-core\" />
     <Folder Include="typings\globals\express\" />
+    <Folder Include="typings\globals\gulp-util\" />
+    <Folder Include="typings\globals\gulp\" />
     <Folder Include="typings\globals\jade\" />
     <Folder Include="typings\globals\mime\" />
     <Folder Include="typings\globals\morgan\" />
@@ -81,6 +112,8 @@
     <TypeScriptCompile Include="typings\globals\debug\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\express-serve-static-core\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\express\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\gulp-util\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\gulp\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\jade\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\mime\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\morgan\index.d.ts" />
