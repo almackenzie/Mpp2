@@ -10,11 +10,19 @@ gulp.task('default', ['watchSrc'], function () {
     return gutil.log('Gulp is running and watching!')
 });
 
-gulp.task('watchSrc', function () {
-    gulp.watch('src/html/**/*', ['copyStaticHtml']);
+gulp.task('copyAll', ['copyStaticHtml', 'copyStaticJs', 'copyStaticCss', 'copyStaticImages'], function () {
+    return gutil.log('everything copied')
 });
 
-gulp.task('copyImpress', function () {
+
+gulp.task('watchSrc', function () {
+    gulp.watch('src/html/**/*', ['copyStaticHtml']);
+    gulp.watch('src/js/**/*', ['copyStaticJs']);
+    gulp.watch('src/css/**/*', ['copyStaticCss']);
+    gulp.watch('src/images/**/*', ['copyStaticImages']);
+});
+
+gulp.task('copyBowerModules', function () {
     // copy any html files in source/ to public/
     gulp.src('bower_components/impress-js/js/*').pipe(gulp.dest('public/javascripts'));
     gulp.src('bower_components/impress-js/css/*').pipe(gulp.dest('public/stylesheets'));
@@ -27,5 +35,23 @@ gulp.task('copyStaticHtml', function () {
             removeComments: true
         }))
         .pipe(gulp.dest('public/html'));
+});
+
+gulp.task('copyStaticJs', function () {
+    // copy any html files in source/ to public/
+    gulp.src('src/js/**/*')
+        .pipe(gulp.dest('public/javascripts'));
+});
+
+gulp.task('copyStaticCss', function () {
+    // copy any html files in source/ to public/
+    gulp.src('src/css/**/*')
+        .pipe(gulp.dest('public/stylesheets'));
+});
+
+gulp.task('copyStaticImages', function () {
+    // copy any html files in source/ to public/
+    gulp.src('src/img/**/*')
+        .pipe(gulp.dest('public/images'));
 });
 

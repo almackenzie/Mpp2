@@ -40,6 +40,10 @@
     <Compile Include="routes\presentation.js" />
     <Compile Include="routes\users.js" />
     <Compile Include="bin\www" />
+    <Compile Include="src\js\LinearTemplate\html5shiv.js" />
+    <Compile Include="src\js\LinearTemplate\init.js" />
+    <Compile Include="src\js\LinearTemplate\skel-panels.min.js" />
+    <Compile Include="src\js\LinearTemplate\skel.min.js" />
     <Content Include="bower_components\impress-js\.bower.json" />
     <Content Include="bower_components\impress-js\.github\CONTRIBUTING.md" />
     <Content Include="bower_components\impress-js\.github\ISSUE_TEMPLATE.md" />
@@ -60,13 +64,34 @@
     <Content Include="bower_components\impress-js\README.md" />
     <Content Include="public\html\presentations\DemoPresentation.html" />
     <Content Include="public\html\presentations\MppPresentation.html" />
+    <Content Include="src\css\LinearTemplate\font\fontawesome-webfont.eot" />
+    <Content Include="src\css\LinearTemplate\font\fontawesome-webfont.svg" />
+    <Content Include="src\css\LinearTemplate\font\fontawesome-webfont.ttf" />
+    <Content Include="src\css\LinearTemplate\font\fontawesome-webfont.woff" />
+    <Content Include="src\css\LinearTemplate\font\FontAwesome.otf" />
+    <Content Include="src\css\LinearTemplate\images\mobileUI-site-nav-opener-bg.svg" />
+    <Content Include="src\css\LinearTemplate\images\toggle.svg" />
+    <Content Include="src\css\LinearTemplate\skel-noscript.css" />
+    <Content Include="src\css\LinearTemplate\style-1000px.css" />
+    <Content Include="src\css\LinearTemplate\style-desktop.css" />
+    <Content Include="src\css\LinearTemplate\style-mobile.css" />
+    <Content Include="src\css\LinearTemplate\style.css" />
+    <Content Include="src\html\LinearTemplate\index.html" />
+    <Content Include="src\html\LinearTemplate\left-sidebar.html" />
+    <Content Include="src\html\LinearTemplate\LICENSE.txt" />
+    <Content Include="src\html\LinearTemplate\no-sidebar.html" />
+    <Content Include="src\html\LinearTemplate\right-sidebar.html" />
     <Content Include="src\html\presentations\DemoPresentation.html" />
     <Content Include="src\html\presentations\MppPresentation.html" />
     <Content Include="package.json" />
     <Content Include="public\stylesheets\style.styl" />
     <Content Include="README.md" />
+    <Content Include="src\img\LinearTemplate\header.jpg" />
+    <Content Include="src\img\LinearTemplate\pic01.jpg" />
+    <Content Include="src\img\LinearTemplate\pic02.jpg" />
+    <Content Include="src\img\LinearTemplate\pic03.jpg" />
+    <Content Include="src\img\LinearTemplate\pic04.jpg" />
     <Content Include="typings.json" />
-    <Content Include="views\index.jade" />
     <Content Include="views\layout.jade" />
     <Content Include="views\error.jade" />
   </ItemGroup>
@@ -86,12 +111,23 @@
     <Folder Include="public\javascripts\" />
     <Folder Include="public\stylesheets\" />
     <Folder Include="routes\" />
+    <Folder Include="src\css\LinearTemplate\" />
+    <Folder Include="src\css\LinearTemplate\font\" />
+    <Folder Include="src\css\LinearTemplate\images\" />
     <Folder Include="src\html\" />
+    <Folder Include="src\html\LinearTemplate\" />
     <Folder Include="src\html\presentations\" />
+    <Folder Include="src\img\LinearTemplate\" />
+    <Folder Include="src\js\" />
+    <Folder Include="src\js\LinearTemplate\" />
+    <Folder Include="src\img\" />
+    <Folder Include="src\css\" />
     <Folder Include="typings\" />
     <Folder Include="typings\globals\" />
     <Folder Include="typings\globals\body-parser\" />
+    <Folder Include="typings\globals\bootstrap\" />
     <Folder Include="typings\globals\cookie-parser\" />
+    <Folder Include="typings\globals\core-js\" />
     <Folder Include="typings\globals\debug\" />
     <Folder Include="typings\globals\express-serve-static-core\" />
     <Folder Include="typings\globals\express\" />
@@ -102,9 +138,13 @@
     <Folder Include="typings\globals\mime\" />
     <Folder Include="typings\globals\morgan\" />
     <Folder Include="typings\globals\node\" />
+    <Folder Include="typings\globals\reflect-metadata\" />
     <Folder Include="typings\globals\serve-favicon\" />
     <Folder Include="typings\globals\serve-static\" />
     <Folder Include="typings\globals\stylus\" />
+    <Folder Include="typings\globals\systemjs\" />
+    <Folder Include="typings\globals\typescript\" />
+    <Folder Include="typings\globals\zone.js\" />
     <Folder Include="views\" />
   </ItemGroup>
   <ItemGroup>
@@ -117,7 +157,9 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="typings\globals\body-parser\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\bootstrap\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\cookie-parser\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\core-js\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\debug\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\express-serve-static-core\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\express\index.d.ts" />
@@ -128,9 +170,13 @@
     <TypeScriptCompile Include="typings\globals\mime\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\morgan\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\node\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\reflect-metadata\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\serve-favicon\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\serve-static\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\stylus\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\systemjs\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\typescript\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\zone.js\index.d.ts" />
     <TypeScriptCompile Include="typings\index.d.ts" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
