@@ -58,7 +58,10 @@
     <Content Include="bower_components\impress-js\LICENSE" />
     <Content Include="bower_components\impress-js\package.json" />
     <Content Include="bower_components\impress-js\README.md" />
-    <Content Include="MppPresentation.html" />
+    <Content Include="public\html\presentations\DemoPresentation.html" />
+    <Content Include="public\html\presentations\MppPresentation.html" />
+    <Content Include="src\html\presentations\DemoPresentation.html" />
+    <Content Include="src\html\presentations\MppPresentation.html" />
     <Content Include="package.json" />
     <Content Include="public\stylesheets\style.styl" />
     <Content Include="README.md" />
@@ -75,11 +78,16 @@
     <Folder Include="bower_components\impress-js\css\" />
     <Folder Include="bower_components\impress-js\js\" />
     <Folder Include="bower_components\impress-js\test\" />
+    <Folder Include="public\html\" />
+    <Folder Include="public\html\presentations\" />
+    <Folder Include="src\" />
     <Folder Include="public\" />
     <Folder Include="public\images\" />
     <Folder Include="public\javascripts\" />
     <Folder Include="public\stylesheets\" />
     <Folder Include="routes\" />
+    <Folder Include="src\html\" />
+    <Folder Include="src\html\presentations\" />
     <Folder Include="typings\" />
     <Folder Include="typings\globals\" />
     <Folder Include="typings\globals\body-parser\" />
@@ -87,6 +95,7 @@
     <Folder Include="typings\globals\debug\" />
     <Folder Include="typings\globals\express-serve-static-core\" />
     <Folder Include="typings\globals\express\" />
+    <Folder Include="typings\globals\gulp-htmlmin\" />
     <Folder Include="typings\globals\gulp-util\" />
     <Folder Include="typings\globals\gulp\" />
     <Folder Include="typings\globals\jade\" />
@@ -112,6 +121,7 @@
     <TypeScriptCompile Include="typings\globals\debug\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\express-serve-static-core\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\express\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\gulp-htmlmin\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\gulp-util\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\gulp\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\jade\index.d.ts" />

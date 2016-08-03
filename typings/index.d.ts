@@ -3,6 +3,7 @@
 /// <reference path="globals/debug/index.d.ts" />
 /// <reference path="globals/express-serve-static-core/index.d.ts" />
 /// <reference path="globals/express/index.d.ts" />
+/// <reference path="globals/gulp-htmlmin/index.d.ts" />
 /// <reference path="globals/gulp-util/index.d.ts" />
 /// <reference path="globals/gulp/index.d.ts" />
 /// <reference path="globals/jade/index.d.ts" />
